@@ -1,0 +1,7 @@
+@use "./mixins/font-face" as *;
+
+@include font-woff("Segoe UI", "../fonts/SegoeUI", 400, normal);
+
+@include font-woff("Segoe UI", "../fonts/SegoeUI-SemiBold", 600, normal);
+
+@include font-woff("Segoe UI", "../fonts/SegoeUI-Bold", 900, normal);

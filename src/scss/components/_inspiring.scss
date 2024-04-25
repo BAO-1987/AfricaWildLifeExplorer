@@ -1,0 +1,184 @@
+// @use "../utils/functions/" as *;
+// @use "../utils/mixins/" as *;
+
+// .inspiring {
+//   padding: rem(37) 0 rem(60);
+
+//   &__content {
+//     margin-bottom: rem(40);
+//   }
+
+//   &__swiper {
+//     display: flex;
+//     gap: 20px;
+//   }
+
+//   &__full {
+//     overflow: hidden;
+//     width: 100%;
+//     max-width: 610px;
+
+//     .inspiring__list {
+//       height: auto;
+//     }
+
+//     .inspiring__item {
+//       position: relative;
+//       z-index: 1;
+//       max-height: 565px;
+
+//       &::before {
+//         content: "";
+//         position: absolute;
+//         background: linear-gradient(180deg, rgba(21, 20, 17, 0) 34.487%, rgb(21, 20, 17) 166.085%);
+//         inset: 0;
+//       }
+//     }
+
+//     .inspiring__desc {
+//       position: absolute;
+//       bottom: 0;
+//       z-index: 1;
+//       padding: 0 27px 27px;
+//       color: var(--color-white);
+//     }
+
+//     h3 {
+//       color: var(--color-white);
+//     }
+
+//     span,
+//     p {
+//       opacity: 0.7;
+//     }
+//   }
+
+//   &__thumbs {
+//     overflow: hidden scroll;
+//     height: 100%;
+//     max-height: 843px;
+
+//     .inspiring__item {
+//       display: flex;
+//       align-items: center;
+//       height: 100% !important;
+//       max-height: 260px;
+//       cursor: pointer;
+//       gap: 26px;
+//     }
+
+//     .inspiring__desc {
+//       translate: 0 8px;
+
+//       span {
+//         margin-bottom: 14px;
+//       }
+
+//       h3 {
+//         margin-bottom: 14px;
+//         font-size: 24px;
+//       }
+
+//       p {
+//         font-size: 17px;
+//       }
+//     }
+
+//     img {
+//       aspect-ratio: 1/1;
+//     }
+//   }
+
+//   &__desc {
+//     span {
+//       display: block;
+//       margin-bottom: 10px;
+//     }
+
+//     h3 {
+//       margin-bottom: 6px;
+//     }
+
+//     p {
+//       margin-bottom: 14px;
+//     }
+
+//     a {
+//       font-size: 18px;
+//       text-decoration: underline;
+//       text-decoration-color: transparent;
+//       transition: text-decoration-color 0.4s linear;
+
+//       &:hover {
+//         text-decoration-color: currentcolor;
+//       }
+//     }
+//   }
+
+//   &__nav {
+//     display: flex;
+//     justify-content: end;
+
+//     .btn {
+//       &.swiper-button-disabled {
+//         background-color: var(--color-white);
+//         pointer-events: none;
+
+//         &::before {
+//           background-color: var(--color-green-400);
+//           opacity: 0.2;
+//         }
+//       }
+
+//       &--next {
+//         scale: -1 1;
+//       }
+//     }
+//   }
+
+//   h2 {
+//     margin-bottom: rem(40);
+//   }
+
+//   @include media(tablet-wide) {
+//     &__swiper {
+//       flex-direction: column;
+//     }
+
+//     &__full {
+//       max-width: 100%;
+
+//       .inspiring__item {
+//         overflow: hidden;
+//       }
+
+//       img {
+//         width: 100%;
+//       }
+//     }
+
+//     &__thumbs {
+//       .inspiring__desc {
+//         display: none;
+//       }
+
+//       .inspiring__item {
+//         img {
+//           width: 100%;
+//         }
+
+//         &:not(:last-child) {
+//           margin-bottom: 0;
+//         }
+//       }
+//     }
+//   }
+
+//   @include media(tablet) {
+//     padding: 30px 0;
+
+//     h2 {
+//       margin-bottom: 20px;
+//     }
+//   }
+// }

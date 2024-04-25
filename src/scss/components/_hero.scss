@@ -1,0 +1,124 @@
+@use "../utils/functions/" as *;
+@use "../utils/mixins/" as *;
+
+.hero {
+  $root: &;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    min-height: 998px;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 140px;
+    width: 100%;
+    max-width: 660px;
+  }
+
+  // &--home {
+  //   #{$root}__content {
+  //     position: relative;
+
+  //     &::before {
+  //       content: "";
+  //       position: absolute;
+  //       left: -145px;
+  //       bottom: -10px;
+  //       width: 130px;
+  //       height: 318px;
+  //       background-image: url("../images/icons/big-arrow.svg");
+  //       background-position: 0 0;
+  //       background-size: contain;
+  //       background-repeat: no-repeat;
+  //     }
+  //   }
+  //   p {
+  //     font-size: 20px;
+  //   }
+  // }
+
+  &--catalog {
+    #{$root}__content {
+      max-width: 595px;
+      margin-bottom: rem(50);
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+  }
+
+  &--services {
+    padding: rem(60) 0 rem(120);
+
+    #{$root}__content {
+      max-width: 100%;
+
+      h1 {
+        margin-bottom: 21px;
+      }
+
+      p {
+        margin: 0 auto;
+        max-width: 505px;
+      }
+    }
+
+    #{$root}__image {
+      position: relative;
+      &:before {
+        content: "";
+        position: absolute;
+        bottom: -60px;
+        height: 2px;
+        width: 100%;
+        background-color: var(--color-grey-200);
+      }
+    }
+  }
+
+  @include media(tablet-wide) {
+    &--home {
+      #{$root}__content {
+        &::before {
+          left: -1%;
+          height: 50%;
+        }
+      }
+    }
+  }
+
+  @include media(tablet) {
+    &__content {
+      margin-bottom: 30px;
+    }
+
+    &__btn {
+      translate: 0 19px;
+    }
+
+    &--catalog {
+      #{$root}__content {
+        margin-bottom: 30px;
+      }
+    }
+
+    &--services {
+      padding: 30px 0;
+
+      #{$root}__image {
+        &::before {
+          bottom: -30px;
+        }
+      }
+    }
+  }
+}

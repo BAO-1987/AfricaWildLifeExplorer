@@ -1,0 +1,30 @@
+/* stylelint-disable alpha-value-notation */
+/* stylelint-disable color-function-notation */
+
+:root {
+  --content-width: 1312px;
+  --container-offset: 16px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // font-family
+  --font-family-primary: "Segoe Ui", sans-serif;
+
+  // font-weight
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+  --fw-800: 800;
+  --fw-900: 900;
+
+  //
+  --color-white: #fff;
+  --color-black: #16110c;
+
+  --color-green-600: #043a2a;
+  --color-red-600: #c02507;
+
+  //  radius
+  --radius-main: 4px;
+}
