@@ -108,3 +108,52 @@ body {
     padding: 15px;
   }
 }
+
+.content {
+  margin: 0 auto rem(48);
+  width: 100%;
+  max-width: 685px;
+  text-align: center;
+  backdrop-filter: blur(5px);
+
+  p {
+    font-weight: var(--fw-600);
+    font-size: clamp(1.125rem, 1rem + 0.5556vi, 1.5rem);
+  }
+}
+
+
+// @use "../utils/functions/" as *;
+// @use "../utils/mixins/" as *;
+
+// .tabs {
+//   &__nav {
+//     display: flex;
+//     align-items: center;
+//     margin-bottom: rem(60);
+//     gap: 21px;
+
+//     &--products {
+//       margin-bottom: rem(83);
+//     }
+//   }
+
+//   .btn {
+//     &.selected {
+//       color: var(--color-white);
+//       background: var(--gradient-green);
+//     }
+//   }
+
+//   @include media(tablet) {
+//     &__nav {
+//       margin-bottom: 35px;
+//     }
+
+//     @include media(mobile-l) {
+//       &__nav {
+//         gap: 16px;
+//       }
+//     }
+//   }
+// }

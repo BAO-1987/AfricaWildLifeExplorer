@@ -1,114 +1,123 @@
-// @use "../utils/functions/" as *;
-// @use "../utils/mixins/" as *;
+@use "../utils/functions/" as *;
+@use "../utils/mixins/" as *;
 
-// .contacts {
-//   padding: rem(118) 0;
+.contacts {
+  &__inner {
+    position: relative;
+  }
 
-//   &__wrapper {
-//     display: flex;
-//     justify-content: space-between;
-//     gap: 24px;
-//   }
+  &__content {
+    text-align: left;
+  }
 
-//   &__image {
-//     overflow: hidden;
-//     border-radius: var(--radius-main);
-//   }
+  &__image {
+    img {
+      width: 100%;
+    }
+  }
 
-//   &__content {
-//     z-index: 2;
-//     width: 100%;
-//     max-width: 716px;
-//   }
+  &__desc{
+    z-index: 2;
+    position: absolute;
+    padding: 60px;
+    width: 100%;
+    max-width: 803px;
+    background-color: var(--color-black);
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    border-radius: 10px;
+  }
 
-//   &__form {
-//     display: flex;
-//     flex-direction: column;
-//     width: 100%;
-//     max-width: 100%;
-//     gap: 25px;
+  &__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    gap: 25px;
 
-//     label {
-//       width: 100%;
-//     }
+    label {
+      width: 100%;
+    }
 
-//     input {
-//       position: relative;
-//       border: 1px solid rgba(50, 50, 50, 0.36);
-//       border-radius: 10px;
-//       padding: 16px 20px 16px 55px;
-//       width: 100%;
-//       max-width: 100%;
-//       font-weight: var(--fw-700);
-//       font-size: 14px;
-//       line-height: 1.86;
-//     }
+    input {
+      position: relative;
+      border: 1px solid rgba(50, 50, 50, 0.36);
+      border-radius: 10px;
+      padding: 16px 20px 16px 55px;
+      width: 100%;
+      max-width: 100%;
+      background-color: var(--color-white);
+      font-weight: var(--fw-700);
+      font-size: 14px;
+      line-height: 1.86;
+    }
 
-//     input[type="email"],
-//     input[type="text"] {
-//       background-image: url("../images/icons/email.svg");
-//       background-position: 19px 17px;
-//       background-repeat: no-repeat;
-//     }
+    input[type="email"],
+    input[type="text"] {
+      background-image: url("../images/icons/email.svg");
+      background-position: 19px 17px;
+      background-repeat: no-repeat;
+    }
 
-//     input[type="text"] {
-//       background-image: url("../images/icons/account.svg");
-//     }
-//   }
+    input[type="text"] {
+      background-image: url("../images/icons/account.svg");
+    }
+  }
 
-//   &__link {
-//     display: flex;
-//     align-items: center;
-//     margin-bottom: 22px;
-//     font-size: 14px;
-//     line-height: 1.85;
-//     gap: 12px;
+  &__link {
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+    font-size: 16px;
+    line-height: 1.85;
+    gap: 12px;
 
-//     &::before {
-//       content: "";
-//       position: relative;
-//       width: 24px;
-//       height: 24px;
-//       background-image: url("../images/icons/email.svg");
-//       background-position: 0 0;
-//       background-size: cover;
-//       background-repeat: no-repeat;
-//     }
-//   }
+    &::before {
+      content: "";
+      position: relative;
+      width: 24px;
+      height: 24px;
+      background-image: url("../images/icons/email.svg");
+      background-position: 0 0;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-color: var(--color-white);
+    }
+  }
 
-//   h2 {
-//     margin-bottom: rem(48);
-//     font-size: clamp(1.5rem, 1rem + 2.2222vi, 3rem);
-//     line-height: 1.06;
-//     text-align: left;
-//     color: var(--color-blue-800);
-//   }
+  h2 {
+    margin-bottom: 10px;
+  }
 
-//   .btn {
-//     padding: 16px 80px;
-//     line-height: 1.22;
-//   }
+  .btn {
+    padding: 16px 80px;
+    line-height: 1.22;
+  }
 
-//   @include media(tablet) {
-//     padding: 30px 0;
+  @include media(tablet) {
+    padding: 30px 0;
 
-//     h2 {
-//       margin-bottom: 30px;
-//     }
-//   }
+    h2 {
+      margin-bottom: 30px;
+    }
+  }
 
-//   @include media(mobile-l) {
-//     &__wrapper {
-//       flex-direction: column;
+  @include media(mobile-l) {
+    &__wrapper {
+      flex-direction: column;
 
-//       .btn {
-//         max-width: 100%;
-//       }
-//     }
+      .btn {
+        max-width: 100%;
+      }
+    }
 
-//     &__image {
-//       width: 100%;
-//       aspect-ratio: 18/9;
-//     }
-//   }
-// }
+    &__image {
+      width: 100%;
+      aspect-ratio: 18/9;
+    }
+  }
+}

@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: center;
   border: 1px solid transparent;
-  border-radius: 0;
+  border-radius: var(--radius-main);
   padding: 8px 32px;
   width: 100%;
   height: max-content;
@@ -22,7 +22,7 @@
 
   &:hover,
   &:focus {
-    border-color: var(--color-white);
+    border-color: var(--color-red-600);
     color: var(--color-red-600);
     background-color: var(--color-white);
   }

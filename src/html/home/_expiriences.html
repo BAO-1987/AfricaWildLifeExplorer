@@ -2,7 +2,7 @@
 
   <div class="container">
 
-    <div class="content">
+    <div class="experiences__content content">
       <h2>
         Explore Diverse Safari Experiences
       </h2>
@@ -12,11 +12,42 @@
       </p>
     </div>
 
-    <p>
+    <p class="experiences__desc">
       Embark on a safari adventure customized to your preferences with our range of safari tour options. Whether you
       seek luxury, family-friendly fun, or adrenaline-fueled expeditions, we have the perfect safari experience for you.
     </p>
 
+    <ul class="experiences__list">
+
+      <include src="./html/_simple-cards.html" locals='{
+        "class": "experiences__item cards",
+        "images": "safari",
+        "title": "Luxury Safari Experiences",
+        "desc": "Luxury Safari Experiences",
+        "text": "Indulge in opulence amidst the wild beauty of Africa. Our luxury safari tours offer lavish accommodations, gourmet dining, and personalized service. Experience the best of wildlife encounters in the lap of luxury",
+        "link": "#"
+        }'></include>
+
+      <include src="./html/_simple-cards.html" locals='{
+        "class": "experiences__item cards",
+        "images": "tours",
+        "title": "Family-Friendly Tours",
+        "desc": "Family-Friendly Tours",
+        "text": "Create lasting memories with your loved ones on our family-friendly safari tours. Designed with young explorers in mind, these tours feature engaging activities, educational experiences, and accommodations suitable for families",
+        "link": "#"
+        }'></include>
+
+      <include src="./html/_simple-cards.html" locals='{
+        "class": "experiences__item cards",
+        "images": "adventures",
+        "title": "Classic Safari Adventures",
+        "desc": "Classic Safari Adventures",
+        "text": "Embark on timeless safari experiences, where every game drive unveils the magic of Africa`s wildlife.Immerse yourself in the savannahs and witness the iconic `Big Five` in their natural habitats. Perfect for those seeking an authentic safari adventure",
+        "link": "#"
+        }'></include>
+    </ul>
+
+    <a class="btn" href="#">See all</a>
 
   </div>
 
