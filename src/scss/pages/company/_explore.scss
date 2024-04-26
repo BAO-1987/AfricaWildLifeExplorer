@@ -1,0 +1,35 @@
+@use "../../utils/functions/" as *;
+@use "../../utils/mixins/" as *;
+
+.explore {
+  &__item {
+    position: relative;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      background: var(--gradient-grey);
+      inset: 0;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 48px;
+    }
+  }
+
+  &__desc {
+    position: relative;
+    z-index: 1;
+
+    p {
+      &:first-of-type {
+        margin-bottom: 16px;
+      }
+    }
+  }
+}

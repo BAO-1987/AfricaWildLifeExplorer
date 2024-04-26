@@ -2,56 +2,37 @@
 @use "../utils/mixins/" as *;
 
 .footer {
-  &__top {
-    border-bottom: 1px solid rgb(230, 255, 228);
-    padding: rem(59) 0;
-    background-color: var(--color-grey-200);
-  }
+  padding: 64px 0;
 
-  &__bottom {
-    display: flex;
-    justify-content: space-between;
-    padding: 19px 0;
-    font-size: 20px;
-    color: var(--color-black);
-    background-color: var(--color-white);
+  &__copy {
+    padding-top: 19px;
 
     p {
-      font-size: 20px;
-      line-height: 1.6;
-      letter-spacing: 0;
+      font-size: 16px;
     }
   }
 
-  &__list {
+  .logo {
+    margin-bottom: 8px;
+  }
+
+  a:not([class]) {
     display: flex;
-    gap: 40px;
-  }
+    align-items: center;
+    margin-bottom: 17px;
+    font-size: 16px;
+    line-height: 1.3;
+    gap: 12px;
 
-  &__item {
-    transition: text-shadow 0.3s linear;
-
-    &:hover {
-      text-shadow: 0.4px 0.4px 0 currentcolor;
-    }
-  }
-
-  @include media(tablet) {
-    &__list {
-      gap: 20px;
-    }
-  }
-
-  @include media(mobile-l) {
-    &__top {
-      padding: 30px 0;
-    }
-
-    &__bottom {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      gap: 20px;
+    &::before {
+      content: "";
+      position: relative;
+      width: 24px;
+      height: 24px;
+      background-image: url("../images/icons/mail.svg");
+      background-position: 0 0;
+      background-size: cover;
+      background-repeat: no-repeat;
     }
   }
 }

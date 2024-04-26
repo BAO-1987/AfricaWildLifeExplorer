@@ -19,7 +19,9 @@
       content: "";
       position: absolute;
       z-index: 1;
-      background: linear-gradient(90.00deg, rgb(22, 17, 12),rgba(22, 17, 12, 0) 38.4%),linear-gradient(180.00deg, rgba(22, 17, 12, 0) 64.83%,rgb(22, 17, 12) 100%),linear-gradient(180.00deg, rgb(22, 17, 12) 9.168%,rgba(22, 17, 12, 0) 22.144%);
+      background: linear-gradient(90deg, rgb(22, 17, 12), rgba(22, 17, 12, 0) 38.4%),
+        linear-gradient(180deg, rgba(22, 17, 12, 0) 64.83%, rgb(22, 17, 12) 100%),
+        linear-gradient(180deg, rgb(22, 17, 12) 9.168%, rgba(22, 17, 12, 0) 22.144%);
       inset: 0;
     }
   }
@@ -39,78 +41,27 @@
   p {
     margin-bottom: 32px;
     font-weight: var(--fw-600);
-    font-size:  clamp(1.25rem, 1.0417rem + 0.9259vi, 1.875rem);
+    font-size: clamp(1.25rem, 1.0417rem + 0.9259vi, 1.875rem);
   }
 
   .btn {
     padding: 13px 81px;
   }
 
+  &--company,
+  &--destination {
+    #{$root}__content {
+      max-width: 750px;
+    }
+    h1 {
+      font-size: clamp(1.875rem, 1.5rem + 1.6667vi, 3rem);
+    }
+  }
 
+  &--destination {
+    h1 {
+      font-size: clamp(1.875rem, 1.6667rem + 2.037vi, 3.5rem);
+    }
+  }
 
-  // &--services {
-  //   padding: rem(60) 0 rem(120);
-
-  //   #{$root}__content {
-  //     max-width: 100%;
-
-  //     h1 {
-  //       margin-bottom: 21px;
-  //     }
-
-  //     p {
-  //       margin: 0 auto;
-  //       max-width: 505px;
-  //     }
-  //   }
-
-  //   #{$root}__image {
-  //     position: relative;
-  //     &:before {
-  //       content: "";
-  //       position: absolute;
-  //       bottom: -60px;
-  //       height: 2px;
-  //       width: 100%;
-  //       background-color: var(--color-grey-200);
-  //     }
-  //   }
-  // }
-
-  // @include media(tablet-wide) {
-  //   &--home {
-  //     #{$root}__content {
-  //       &::before {
-  //         left: -1%;
-  //         height: 50%;
-  //       }
-  //     }
-  //   }
-  // }
-
-  // @include media(tablet) {
-  //   &__content {
-  //     margin-bottom: 30px;
-  //   }
-
-  //   &__btn {
-  //     translate: 0 19px;
-  //   }
-
-  //   &--catalog {
-  //     #{$root}__content {
-  //       margin-bottom: 30px;
-  //     }
-  //   }
-
-  //   &--services {
-  //     padding: 30px 0;
-
-  //     #{$root}__image {
-  //       &::before {
-  //         bottom: -30px;
-  //       }
-  //     }
-  //   }
-  // }
 }

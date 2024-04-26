@@ -37,11 +37,10 @@
     background-color: transparent;
     font-size: 18px;
     line-height: 1.33;
-    transition: text-shadow 0.3s linear;
-
+    transition: color 0.3s linear;
 
     &:hover {
-      text-shadow: 0.3px 0.3px 0 currentcolor;
+      color: var(--color-red-600);
     }
 
     &.true {
@@ -56,14 +55,23 @@
   }
 
   &--footer {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1090px;
+
     #{$root}__list {
+      display: block;
+      column-count: 2;
       margin: 0;
+      gap: 0;
     }
 
     #{$root}__item {
-      @include media(mobile-m) {
-        margin: 0 0 16px 0;
-      }
+      margin: 0 0 8px 0;
+    }
+
+    #{$root}__link {
+      font-size: 16px;
     }
   }
 

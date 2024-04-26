@@ -1,0 +1,74 @@
+@use "../../utils/functions/" as *;
+@use "../../utils/mixins/" as *;
+
+.safety {
+  &__inner {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  &__images {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      background: linear-gradient(270deg, rgba(22, 17, 12, 0) 71.546%, rgb(22, 17, 12) 100%),
+        linear-gradient(90deg, rgba(22, 17, 12, 0) 72.268%, rgb(22, 17, 12) 100%),
+        linear-gradient(180deg, rgb(22, 17, 12), rgba(22, 17, 12, 0) 14.754%),
+        linear-gradient(180deg, rgba(22, 17, 12, 0) 80.164%, rgb(22, 17, 12) 100%);
+      inset: 0;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    max-width: 533px;
+    translate: 0 -6px;
+    gap: 36px;
+  }
+
+  &__item {
+    position: relative;
+    display: grid;
+    align-items: center;
+    padding-left: 80px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 64px;
+      height: 64px;
+      background-image: url("../images/icons/respect.svg");
+      background-position: 0 0;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    &--response {
+      &::before {
+        background-image: url("../images/icons/response.svg");
+      }
+    }
+
+    &--sanitation {
+      &::before {
+        background-image: url("../images/icons/sanitation.svg");
+      }
+    }
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  h3 {
+    margin-bottom: 9px;
+  }
+}
