@@ -1,18 +1,37 @@
 <li class="{{class}}">
 
-  <img src="./images/cards/{{images}}.jpg" alt="{{desc}}" width="421" height="240" loading="lazy" />
+  <img src="./images/cards/{{images}}.jpg" alt="{{desc}}" width="421" height="253" loading="lazy" />
 
   <div class="cards__content">
+
+    <span>
+      {{subtitle}}
+    </span>
 
     <h3>
       {{title}}
     </h3>
 
-    <p>
-      {{text}}
-    </p>
+    <ul>
+      <li>
+        Duration: {{duration}}
+      </li>
 
-    <a href="{{link}}"></a>
+      <li>
+        Highlights: {{highlights}}
+      </li>
+
+      <li>
+        Accommodation: {{accommodation}}
+      </li>
+
+      <li>
+       Price: {{price}}
+      </li>
+    </ul>
+
+    <a class="btn" href="#">Сontact Us</a>
+
   </div>
 
 </li>

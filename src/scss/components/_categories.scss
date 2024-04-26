@@ -24,6 +24,10 @@
     &:not(:last-child) {
       margin-bottom: 64px;
     }
+
+    p {
+      letter-spacing: 0.005em;
+    }
   }
 
   h3 {

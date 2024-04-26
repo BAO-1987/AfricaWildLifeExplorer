@@ -1,23 +1,17 @@
-<section class="experiences section">
+<section class="thems section">
 
   <div class="container">
 
-    <div class="experiences__content content">
-      <h2>
-        Explore Diverse Safari Experiences
-      </h2>
+    <div class="content thems__content">
+      <h2>Explore Our Safari Tour Themes</h2>
 
       <p>
-        Tailored Adventures for Every Explorer
+        Discover our safari tours organized into unique categories, each offering a tailored experience to suit your
+        preferences and interests
       </p>
     </div>
 
-    <p class="experiences__desc">
-      Embark on a safari adventure customized to your preferences with our range of safari tour options. Whether you
-      seek luxury, family-friendly fun, or adrenaline-fueled expeditions, we have the perfect safari experience for you.
-    </p>
-
-    <ul class="experiences__list">
+    <ul class="thems__list">
       <include src="./html/_simple-item.html" locals='{
         "class": "experiences__item",
         "images": "safari",
@@ -36,7 +30,7 @@
         "link": "#"
         }'></include>
 
-      <include src="./html/_simple-item.html" locals='{
+      <include src="./html/_simple-cards.html" locals='{
         "class": "experiences__item",
         "images": "adventures",
         "title": "Classic Safari Adventures",
@@ -44,10 +38,26 @@
         "text": "Embark on timeless safari experiences, where every game drive unveils the magic of Africa`s wildlife.Immerse yourself in the savannahs and witness the iconic `Big Five` in their natural habitats. Perfect for those seeking an authentic safari adventure",
         "link": "#"
         }'></include>
-    </ul>
 
-    <a class="btn btn--big" href="#">See all</a>
+      <include src="./html/_simple-cards.html" locals='{
+        "class": "experiences__item",
+        "images": "girl",
+        "title": "Adventure Expeditions",
+        "desc": "Adventure Expeditions",
+        "text": "For the thrill-seekers and adventurers, our expedition tours take you off the beaten path. Trek through untamed landscapes, explore remote wilderness areas, and engage in adrenaline-pumping activities. An adventure awaits!",
+        "link": "#"
+        }'></include>
+
+      <include src="./html/_simple-cards.html" locals='{
+        "class": "experiences__item",
+        "images": "elephant",
+        "title": "Specialized Wildlife Photography Tours",
+        "desc": "Specialized Wildlife Photography Tours",
+        "text": "Capture the essence of Africa`s wildlife through your lens on our specialized photography tours. Led by expert guides, these tours provide opportunities for stunning wildlife photography in some of the most picturesque settings",
+        "link": "#"
+        }'></include>
+    </ul>
 
   </div>
 
-</section>  
+</section>

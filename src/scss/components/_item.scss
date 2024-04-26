@@ -1,7 +1,7 @@
 @use "../utils/functions/" as *;
 @use "../utils/mixins" as *;
 
-.cards {
+.item {
   position: relative;
 
   &::before {
@@ -22,10 +22,13 @@
     border-top: none;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
-    backdrop-filter: blur(5px);
-
+  
     h3 {
       margin-bottom: 16px;
+    }
+
+    p {
+      letter-spacing: -0.008em;
     }
   }
 

@@ -24,7 +24,7 @@
 
   &__item {
     &:not(:last-of-type) {
-      margin-right: 36px;
+      margin-right: 40px;
 
       @include media(tablet-wide) {
         margin-right: 25px;
@@ -39,24 +39,13 @@
     line-height: 1.33;
     transition: text-shadow 0.3s linear;
 
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: -48px;
-      width: 75px;
-      height: 3px;
-      background-color: var(--color-green-400);
-      opacity: 0;
-    }
 
     &:hover {
       text-shadow: 0.3px 0.3px 0 currentcolor;
     }
 
     &.true {
-      &::before {
-        opacity: 1;
-      }
+      color: var(--color-red-600);
     }
   }
 

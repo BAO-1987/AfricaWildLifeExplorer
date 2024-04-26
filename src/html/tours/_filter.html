@@ -1,0 +1,212 @@
+<section class="filter section">
+
+  <div class="container">
+
+    <div class="content filter__content">
+      <h2>
+        Explore Our Safari Tour Themes
+      </h2>
+
+      <p>
+        Discover our safari tours organized into unique categories, each offering a tailored experience to suit your
+        preferences and interests
+      </p>
+    </div>
+
+    <div class="filter__inner">
+
+      <ul class="filter__nav is-scrolling">
+        <li>
+          <button class="btn btn--filter active" type="button" data-filter="all">
+            All tours
+          </button>
+        </li>
+
+        <li>
+          <button class="btn btn--filter" type="button" data-filter="seating">
+            Seating
+          </button>
+        </li>
+
+        <li>
+          <button class="btn btn--filter" type="button" data-filter="classic">
+            Classic Safari Adventures
+          </button>
+        </li>
+
+        <li>
+          <button class="btn btn--filter" type="button" data-filter="luxury">
+            Luxury Safari Experiences
+          </button>
+        </li>
+
+        <li>
+          <button class="btn btn--filter" type="button" data-filter="family">
+            Family-Friendly Tours
+          </button>
+        </li>
+
+        <li>
+          <button class="btn btn--filter" type="button" data-filter="adventure">
+            Adventure Expeditions
+          </button>
+        </li>
+
+        <li>
+          <button class="btn btn--filter" type="button" data-filter="specialized">
+            Specialized Wildlife
+            Photography Tours
+          </button>
+        </li>
+      </ul>
+
+      <div class="filter__grid">
+
+        <div class="filter__category" data-category="classic">
+          <include src="./html/_simple-cards.html" locals='{
+        "class": "cards",
+        "images": "expedition",
+        "subtitle": "Classic Safari Adventures",
+        "title": "Serengeti Expedition",
+        "desc": "Serengeti Expedition",
+        "duration": "7 days",
+        "highlights": "Witness the Great Migration, game drives, Seronera Valley exploration.",
+        "accommodation": "Tented camps.",
+        "price": "Starting from $3,500 per person."
+        }'></include>
+        </div>
+
+        <!-- <div class="filter__category" data-category="classic">
+          <include src="./html/_simple-cards.html" locals='{
+        "class": "cards",
+        "images": "zebra",
+        "subtitle": "Classic Safari Adventures",
+        "title": "Kruger National Park Safari",
+        "desc": "Kruger National Park Safari",
+        "duration": "5 days",
+        "highlights": "Big Five game drives, bush walks, sunset safaris.
+        Accommodation: Luxury lodges.",
+        "accommodation": "Tented camps.",
+        "price": " Starting from $3,200 per person."
+        }'></include>
+        </div> -->
+        <!-- 
+        <div class="filter__category" data-category="luxury">
+          <include src="./html/_simple-cards.html" locals='{
+        "class": "cards",
+        "images": "family",
+        "subtitle": "Family-Friendly Tours",
+        "title": "Kenya Family Safari Adventure",
+        "desc": "Kenya Family Safari Adventure",
+        "duration": "7 days",
+        "highlights": "Family-friendly game drives, bush picnics, Maasai village visit.",
+        "accommodation": " Family lodges.",
+        "price": "Starting from $4,200 per person (children discounts available)."
+        }'></include>
+        </div> -->
+
+        <!-- <div class="filter__category" data-category="luxury">
+          <include src="./html/_simple-cards.html" locals='{
+        "class": "cards",
+        "images": "gnu",
+        "subtitle": "Luxury Safari Experiences",
+        "title": "Okavango Delta Luxury Retreat",
+        "desc": "Kenya Family Safari Adventure",
+        "duration": "8 days",
+        "highlights": "Private game drives, mokoro excursions, exclusive lodges.",
+        "accommodation": "Luxury tented camps.",
+        "price": "Starting from $7,500 per person."
+        }'></include>
+        </div>
+
+        <div class="filter__category" data-category="family">
+          <include src="./html/_simple-cards.html" locals='{
+        "class": "cards",
+        "images": "car",
+        "subtitle": "Family-Friendly Tours",
+        "title": "Kenya Family Safari Adventure",
+        "desc": "Kenya Family Safari Adventure",
+        "duration": "7 days",
+        "highlights": "Family-friendly game drives, bush picnics, Maasai village visit.",
+        "accommodation": " Family lodges.",
+        "price": "Starting from $4,200 per person (children discounts available)."
+        }'></include>
+        </div>
+
+        <div class="filter__category" data-category="family">
+          <include src="./html/_simple-cards.html" locals='{
+        "class": "cards",
+        "images": "family",
+        "subtitle": "Family-Friendly Tours",
+        "title": "South Africa Family Safari",
+        "desc": "South Africa Family Safari",
+        "duration": "8 days",
+        "highlights": "Child-friendly game drives, interactive bushwalks, junior ranger programs.",
+        "accommodation": "Family-friendly lodges.",
+        "price": "Starting from $4,500 per person (children discounts available)."
+        }'></include>
+        </div>
+
+        <div class="filter__category" data-category="adventure">
+          <include src="./html/_simple-cards.html" locals='{
+        "class": "cards",
+        "images": "adventure",
+        "subtitle": "Adventure Expeditions",
+        "title": "Namibia Desert Adventure",
+        "desc": "Namibia Desert Adventure",
+        "duration": "10 days",
+        "highlights": "Dune bashing, quad biking, desert camping.",
+        "accommodation": "Wilderness camps.",
+        "price": "Starting from $5,800 per person."
+        }'></include>
+        </div>
+
+        <div class="filter__category" data-category="adventure">
+          <include src="./html/_simple-cards.html" locals='{
+        "class": "cards",
+        "images": "trekking",
+        "subtitle": "Adventure Expeditions",
+        "title": "Uganda Gorilla Trekking Expedition",
+        "desc": "Uganda Gorilla Trekking Expedition",
+        "duration": "6 days",
+        "highlights": " Gorilla trekking in Bwindi Forest, chimpanzee tracking, waterfall hikes.",
+        "accommodation": " Eco-lodges.",
+        "price": " Starting from $4,500 per person."
+        }'></include>
+        </div>
+
+        <div class="filter__category" data-category="specialized">
+          <include src="./html/_simple-cards.html" locals='{
+        "class": "cards",
+        "images": "gepard",
+        "subtitle": "Specialized Wildlife Photography Tours",
+        "title": "Botswana Wildlife Photography Safari",
+        "desc": "Botswana Wildlife Photography Safari",
+        "duration": "9 days",
+        "highlights": " Photography workshops, exclusive photography hides, abundant wildlife.",
+        "accommodation": "Luxury tented camps.",
+        "price": "Starting from $6,500 per person."
+        }'></include>
+        </div>
+
+        <div class="filter__category" data-category="specialized">
+          <include src="./html/_simple-cards.html" locals='{
+        "class": "cards",
+        "images": "gorilla",
+        "subtitle": "Specialized Wildlife Photography Tours",
+        "title": "Rwanda Mountain Gorilla Photography Tour",
+        "desc": "Rwanda Mountain Gorilla Photography Tour",
+        "duration": "5 days",
+        "highlights": "Mountain gorilla trekking, golden monkey encounters, scenic vistas.",
+        "accommodation": "Boutique lodges.",
+        "price": Starting from $5,200 per person."
+        }'></include>
+        </div> -->
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>

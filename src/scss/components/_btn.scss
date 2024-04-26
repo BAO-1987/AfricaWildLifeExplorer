@@ -27,11 +27,6 @@
     background-color: var(--color-white);
   }
 
-  // .formsapp-button & {
-  //   margin: 0;
-  //   font-family: var(--font-family-primary) !important;
-  // }
-
   &--reverse {
     color: var(--color-green-600);
     background-color: var(--color-white);
@@ -41,6 +36,10 @@
       color: var(--color-white);
       background-color: var(--color-red-600);
     }
+  }
+
+  &--big {
+    padding: 13px 80px;
   }
 
   // &--filter {
@@ -67,15 +66,15 @@
 
   &--request {
     margin: 0;
+   font-family: inherit;
     color: var(--color-white) !important;
     background-color: var(--color-red-600) !important;
 
     &:hover,
     &:focus {
-      border-color: var(--color-green-400) !important;
-      color: var(--color-green-400) !important;
+      border-color: var(--color-red-600) !important;
+      color: var(--color-red-600) !important;
       background-color: var(--color-white) !important;
     }
   }
-
-  }
+}

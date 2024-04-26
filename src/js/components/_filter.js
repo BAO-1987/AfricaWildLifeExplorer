@@ -1,6 +1,6 @@
 const filterList = document?.querySelector(".filter__nav");
 const filterButtons = filterList?.querySelectorAll(".btn--filter");
-const conferences = document?.querySelectorAll(".filter__content");
+const conferences = document?.querySelectorAll(".filter__category");
 let conferenceIndex = 0;
 
 conferences?.forEach((conference) => {
