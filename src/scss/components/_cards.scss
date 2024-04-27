@@ -19,7 +19,7 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    padding: 32px 16px 16px;
+    padding: 32px 15px 15px;
     overflow: hidden;
     position: relative;
     z-index: 2;
@@ -28,7 +28,6 @@
     border-top: none;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
-    height: 100%;
 
     h3 {
       margin-bottom: 16px;
@@ -54,10 +53,10 @@
       &::before {
         content: "";
         position: absolute;
-        width: 3px;
-        height: 3px;
-        left: -15px;
-        top: 11px;
+        width: 4px;
+        height: 4px;
+        left: -14px;
+        top: 9px;
         border-radius: 50%;
         background-color: var(--color-white);
       }
@@ -65,6 +64,14 @@
       &:not(:last-child) {
         margin-bottom: 8px;
       }
+    }
+  }
+
+  img {
+    width: 100%;
+
+    @include media(mobile-m) {
+      aspect-ratio: 2/1;
     }
   }
 

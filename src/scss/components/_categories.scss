@@ -33,4 +33,36 @@
   h3 {
     margin-bottom: 16px;
   }
+
+  @include media(tablet) {
+    &__desc {
+      margin-bottom: 24px;
+    }
+
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  @include media(mobile-l) {
+    &__inner {
+      display: block;
+    }
+
+    &__image {
+      margin-bottom: 24px;
+      
+      img {
+        width: 100%;
+        object-position: top;
+        aspect-ratio: 10/9;
+      }
+    }
+
+    &__list {
+      max-width: 100%;
+    }
+  }
 }

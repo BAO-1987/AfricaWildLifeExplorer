@@ -68,29 +68,27 @@ body {
   min-height: var(--vh);
 }
 
-// .main {
-//   padding-top: calc(var(--header-height) - 1px);
-// }
+.main {
+  &--policy {
+    padding-top: calc(var(--header-height) - 1px);
+  }
+}
 
 .logo {
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 100%;
   max-width: 292px;
 
   @include media(tablet-wide) {
     max-width: 220px;
   }
-
-  img {
-    height: 100%;
-  }
 }
 
 .is-scrolling {
-  scrollbar-color: var(--color-green-400) var(--color-white);
+  scrollbar-color: var(--color-red-600) var(--color-white);
   scrollbar-width: thin;
-  overflow-y: scroll;
 
   &::-webkit-scrollbar {
     width: 4px;
@@ -106,23 +104,25 @@ body {
   &::-webkit-scrollbar-thumb {
     -webkit-border-radius: 10px;
     border-radius: 10px;
-    background-color: var(--color-green-400);
+    background-color: var(--color-red-600);
   }
 
-  @include media(tablet-wide) {
-    overflow-y: scroll;
+  @include media(mobile-l) {
     padding: 15px;
   }
 }
 
-.content {
-  margin: 0 auto rem(48);
-  width: 100%;
-  max-width: 685px;
-  text-align: center;
+.overlay {
+  position: relative;
 
-  p {
-    font-weight: var(--fw-600);
-    font-size: clamp(1.125rem, 1rem + 0.5556vi, 1.5rem);
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+     background: linear-gradient(270deg, rgba(22, 17, 12, 0) 71.546%, rgb(22, 17, 12) 100%),
+        linear-gradient(90deg, rgba(22, 17, 12, 0) 72.268%, rgb(22, 17, 12) 100%),
+        linear-gradient(180deg, rgb(22, 17, 12), rgba(22, 17, 12, 0) 14.754%),
+        linear-gradient(180deg, rgba(22, 17, 12, 0) 80.164%, rgb(22, 17, 12) 100%);
+    inset: 0;
   }
 }

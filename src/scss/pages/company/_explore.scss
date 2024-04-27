@@ -18,7 +18,7 @@
     }
 
     &:not(:last-child) {
-      margin-bottom: 48px;
+      margin-bottom: rem(48);
     }
   }
 
@@ -29,6 +29,31 @@
     p {
       &:first-of-type {
         margin-bottom: 16px;
+      }
+    }
+  }
+
+  @include media(tablet) {
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  @include media(mobile-l) {
+    &__item {
+      grid-template-columns: 1fr;
+    }
+
+    &__desc {
+      grid-row: 1 / span 1;
+    }
+
+    &__image {
+      img {
+        width: 100%;
+        aspect-ratio: 2/1;
       }
     }
   }

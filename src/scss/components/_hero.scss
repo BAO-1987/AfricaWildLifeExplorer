@@ -64,4 +64,36 @@
     }
   }
 
+  &--tour {
+    #{$root}__content {
+      max-width: 720px;
+    }
+  }
+
+  &--gallery {
+    #{$root}__content {
+      max-width: 850px;
+    }
+  }
+
+  @include media(tablet) {
+    &__inner {
+      min-height: 450px;
+    }
+
+    &__content {
+      max-width: 100%;
+      margin-bottom: 0;
+    }
+  }
+
+  @include media(mobile-m) {
+    &__inner {
+      min-height: 400px;
+    }
+
+    .btn {
+      max-width: 100%;
+    }
+  }
 }

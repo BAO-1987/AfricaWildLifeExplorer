@@ -15,51 +15,6 @@
 
     <div class="filter__inner">
 
-      <ul class="filter__nav is-scrolling">
-        <li>
-          <button class="btn btn--filter active" type="button" data-filter="all">
-            All tours
-          </button>
-        </li>
-
-        <li>
-          <button class="btn btn--filter" type="button" data-filter="seating">
-            Seating
-          </button>
-        </li>
-
-        <li>
-          <button class="btn btn--filter" type="button" data-filter="classic">
-            Classic Safari Adventures
-          </button>
-        </li>
-
-        <li>
-          <button class="btn btn--filter" type="button" data-filter="luxury">
-            Luxury Safari Experiences
-          </button>
-        </li>
-
-        <li>
-          <button class="btn btn--filter" type="button" data-filter="family">
-            Family-Friendly Tours
-          </button>
-        </li>
-
-        <li>
-          <button class="btn btn--filter" type="button" data-filter="adventure">
-            Adventure Expeditions
-          </button>
-        </li>
-
-        <li>
-          <button class="btn btn--filter" type="button" data-filter="specialized">
-            Specialized Wildlife
-            Photography Tours
-          </button>
-        </li>
-      </ul>
-
       <div class="filter__grid">
 
         <div class="filter__category" data-category="classic">
@@ -76,7 +31,7 @@
         }'></include>
         </div>
 
-        <!-- <div class="filter__category" data-category="classic">
+        <div class="filter__category" data-category="classic">
           <include src="./html/_simple-cards.html" locals='{
         "class": "cards",
         "images": "zebra",
@@ -84,28 +39,13 @@
         "title": "Kruger National Park Safari",
         "desc": "Kruger National Park Safari",
         "duration": "5 days",
-        "highlights": "Big Five game drives, bush walks, sunset safaris.
-        Accommodation: Luxury lodges.",
+        "highlights": "Big Five game drives, bush walks, sunset safaris. Accommodation: Luxury lodges.",
         "accommodation": "Tented camps.",
-        "price": " Starting from $3,200 per person."
+        "price": "Starting from $3,200 per person."
         }'></include>
-        </div> -->
-        <!-- 
-        <div class="filter__category" data-category="luxury">
-          <include src="./html/_simple-cards.html" locals='{
-        "class": "cards",
-        "images": "family",
-        "subtitle": "Family-Friendly Tours",
-        "title": "Kenya Family Safari Adventure",
-        "desc": "Kenya Family Safari Adventure",
-        "duration": "7 days",
-        "highlights": "Family-friendly game drives, bush picnics, Maasai village visit.",
-        "accommodation": " Family lodges.",
-        "price": "Starting from $4,200 per person (children discounts available)."
-        }'></include>
-        </div> -->
+        </div>
 
-        <!-- <div class="filter__category" data-category="luxury">
+        <div class="filter__category" data-category="luxury">
           <include src="./html/_simple-cards.html" locals='{
         "class": "cards",
         "images": "gnu",
@@ -116,6 +56,20 @@
         "highlights": "Private game drives, mokoro excursions, exclusive lodges.",
         "accommodation": "Luxury tented camps.",
         "price": "Starting from $7,500 per person."
+        }'></include>
+        </div>
+
+        <div class="filter__category" data-category="luxury">
+          <include src="./html/_simple-cards.html" locals='{
+        "class": "cards",
+        "images": "giraffe",
+        "subtitle": "Luxury Safari Experiences",
+        "title": "Maasai Mara Luxury Safari",
+        "desc": "Maasai Mara Luxury Safari",
+        "duration": "6 days",
+        "highlights": "Luxury tented camps, hot air balloon safari, Maasai cultural visit.",
+        "accommodation": "Luxury tented camps.",
+        "price": "Starting from $6,800 per person."
         }'></include>
         </div>
 
@@ -169,7 +123,7 @@
         "title": "Uganda Gorilla Trekking Expedition",
         "desc": "Uganda Gorilla Trekking Expedition",
         "duration": "6 days",
-        "highlights": " Gorilla trekking in Bwindi Forest, chimpanzee tracking, waterfall hikes.",
+        "highlights": "Gorilla trekking in Bwindi Forest, chimpanzee tracking, waterfall hikes.",
         "accommodation": " Eco-lodges.",
         "price": " Starting from $4,500 per person."
         }'></include>
@@ -199,11 +153,52 @@
         "duration": "5 days",
         "highlights": "Mountain gorilla trekking, golden monkey encounters, scenic vistas.",
         "accommodation": "Boutique lodges.",
-        "price": Starting from $5,200 per person."
+        "price": "Starting from $5,200 per person."
         }'></include>
-        </div> -->
+        </div>
 
       </div>
+
+      <ul class="filter__nav is-scrolling">
+        <li>
+          <button class="btn btn--filter active" type="button" data-filter="all">
+            All tours
+          </button>
+        </li>
+
+        <li>
+          <button class="btn btn--filter" type="button" data-filter="classic">
+            Classic Safari Adventures
+          </button>
+        </li>
+
+        <li>
+          <button class="btn btn--filter" type="button" data-filter="luxury">
+            Luxury Safari Experiences
+          </button>
+        </li>
+
+        <li>
+          <button class="btn btn--filter" type="button" data-filter="family">
+            Family-Friendly Tours
+          </button>
+        </li>
+
+        <li>
+          <button class="btn btn--filter" type="button" data-filter="adventure">
+            Adventure Expeditions
+          </button>
+        </li>
+
+        <li>
+          <button class="btn btn--filter" type="button" data-filter="specialized">
+            Specialized Wildlife
+            Photography Tours
+          </button>
+        </li>
+      </ul>
+
+
 
     </div>
 

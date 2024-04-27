@@ -14,6 +14,7 @@
     font-weight: var(--fw-600);
     font-size: 24px;
     line-height: 1.33;
+    white-space: nowrap;
     opacity: 0.6;
     transition: opacity 0.3s linear;
 
@@ -34,11 +35,15 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 24px;
     }
+
+    img {
+      height: 100%;
+    }
   }
 
   &__list {
     display: grid;
-    gap: 30px;
+    gap: 32px;
   }
 
   h2 {
@@ -50,15 +55,37 @@
     margin-bottom: 16px;
   }
 
-  // @include media(tablet) {
-  //   &__nav {
-  //     margin-bottom: 35px;
-  //   }
+  @include media(tablet-wide) {
+    &__list {
+      gap: 20px;
+    }
+  }
 
-  //   @include media(mobile-l) {
-  //     &__nav {
-  //       gap: 16px;
-  //     }
-  //   }
-  // }
+  @include media(tablet) {
+    h2 {
+      margin-bottom: 30px;
+    }
+  }
+
+  @include media(mobile-l) {
+    &__content {
+      div {
+        place-items: center;
+        grid-template-columns: 1fr;
+      }
+    }
+
+    &__nav {
+      align-items: flex-start;
+      overflow-y: scroll;
+      margin-bottom: 30px;
+      gap: 20px;
+    }
+
+    img {
+      width: 100%;
+      object-position: center;
+      aspect-ratio: 16/9;
+    }
+  }
 }
