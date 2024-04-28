@@ -2,6 +2,8 @@
 @use "../utils/mixins/" as *;
 
 .contacts {
+  $root: &;
+
   &__inner {
     position: relative;
   }
@@ -106,6 +108,31 @@
       padding: 25px;
       max-width: 550px;
     }
+
+    &--main {
+        #{$root}__inner {
+          display: flex;
+          flex-direction: column-reverse;
+          padding: 0 16px;
+          gap: 24px;
+        }
+
+        #{$root}__desc {
+          position: relative;
+          transform: none;
+          inset: 0;
+
+          .btn {
+            max-width: 100%;
+          }
+        }
+
+        #{$root}__image {
+          img {
+            aspect-ratio: 2/1;
+          }
+        }
+      }
   }
 
   @include media(mobile-l) {

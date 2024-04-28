@@ -2,6 +2,8 @@
 @use "../utils/mixins/" as *;
 
 .gallery {
+  $root: &;
+
   &__content {
     max-width: 960px;
   }
@@ -53,11 +55,21 @@
         grid-column: 3 span;
       }
     }
+
+    #{$root}__list {
+      margin-bottom: 0;
+    }
   }
 
   @include media(tablet) {
     &__list {
       margin-bottom: 24px;
+    }
+  }
+
+  @include media(mobile-l) {
+    &__list {
+      gap: 16px;
     }
   }
 }
