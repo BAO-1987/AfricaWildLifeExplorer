@@ -19,8 +19,8 @@
     transition: opacity 0.3s linear;
 
     &.selected {
-      padding: 4px 16px;
       border-radius: 100px;
+      padding: 4px 16px;
       font-weight: var(--fw-600);
       font-size: 24px;
       color: var(--color-black);
@@ -76,7 +76,7 @@
     }
 
     &__nav {
-      align-items: flex-start;
+      justify-content: flex-start;
       overflow-y: scroll;
       margin-bottom: 30px;
       gap: 20px;

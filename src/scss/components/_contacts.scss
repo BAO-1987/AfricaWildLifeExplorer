@@ -83,6 +83,8 @@
     margin-bottom: 17px;
     font-size: 16px;
     line-height: 1.3;
+    text-decoration: underline;
+    text-decoration-color: transparent;
     gap: 12px;
 
     &::before {
@@ -94,6 +96,10 @@
       background-position: 0 0;
       background-size: cover;
       background-repeat: no-repeat;
+    }
+
+    &:hover {
+      text-decoration-color: currentColor;
     }
   }
 
@@ -110,29 +116,29 @@
     }
 
     &--main {
-        #{$root}__inner {
-          display: flex;
-          flex-direction: column-reverse;
-          padding: 0 16px;
-          gap: 24px;
-        }
+      #{$root}__inner {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0 16px;
+        gap: 24px;
+      }
 
-        #{$root}__desc {
-          position: relative;
-          transform: none;
-          inset: 0;
+      #{$root}__desc {
+        position: relative;
+        transform: none;
+        inset: 0;
 
-          .btn {
-            max-width: 100%;
-          }
-        }
-
-        #{$root}__image {
-          img {
-            aspect-ratio: 2/1;
-          }
+        .btn {
+          max-width: 100%;
         }
       }
+
+      #{$root}__image {
+        img {
+          aspect-ratio: 2/1;
+        }
+      }
+    }
   }
 
   @include media(mobile-l) {
